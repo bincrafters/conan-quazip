@@ -8,7 +8,7 @@ class QuazipConan(ConanFile):
     topics = ("conan", "quazip")
     url = "https://github.com/bincrafters/conan-quazip"
     homepage = "https://github.com/stachenov/quazip"
-    license = " LGPL-2.1-only"
+    license = "LGPL-2.1-only"
     exports_sources = ["CMakeLists.txt"]
     generators = "cmake"
 
@@ -20,7 +20,7 @@ class QuazipConan(ConanFile):
     _build_subfolder = "build_subfolder"
 
     requires = (
-        "qt/5.15.1@bincrafters/stable",
+        "qt/5.15.2@bincrafters/stable",
         "zlib/1.2.11"
     )
 
